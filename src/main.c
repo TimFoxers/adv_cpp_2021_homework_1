@@ -26,25 +26,49 @@ int main(){
             break;
         }
         else {
-            printf("Введите параметр продукта: энергетическая ценность. Оставьте поле пустым, если неизвестно. \n");
+            printf("Введите параметр продукта: энергетическая ценность. \n");
             temp_e_value = input_int();
-            printf("Введите параметр продукта: количество калорий. Оставьте поле пустым, если неизвестно. \n");
+            if(temp_e_value == 0){
+                printf("Некорректное значение. Попробуйте ввести продукт заново. \n");
+                continue;
+            }
+            printf("Введите параметр продукта: количество калорий. \n");
             temp_cal = input_int();
-            printf("Введите параметр продукта: белки. Оставьте поле пустым, если неизвестно. \n");
+            if(temp_cal == 0){
+                printf("Некорректное значение. Попробуйте ввести продукт заново. \n");
+                continue;
+            }
+            printf("Введите параметр продукта: белки. \n");
             temp_proteins = input_int();
-            printf("Введите параметр продукта: жиры. Оставьте поле пустым, если неизвестно. \n");
+            if(temp_proteins == 0){
+                printf("Некорректное значение. Попробуйте ввести продукт заново. \n");
+                continue;
+            }
+            printf("Введите параметр продукта: жиры. \n");
             temp_fats = input_int();
-            printf("Введите параметр продукта: углеводы. Оставьте поле пустым, если неизвестно. \n");
+            if(temp_fats == 0){
+                printf("Некорректное значение. Попробуйте ввести продукт заново. \n");
+                continue;
+            }
+            printf("Введите параметр продукта: углеводы. \n");
             temp_carbohydrates = input_int();
-            printf("Введите параметр продукта: сахар. Оставьте поле пустым, если неизвестно. \n");
+            if(temp_carbohydrates == 0){
+                printf("Некорректное значение. Попробуйте ввести продукт заново. \n");
+                continue;
+            }
+            printf("Введите параметр продукта: сахар. \n");
             temp_sugar = input_int();
-            printf("Введите параметр продукта: Витамин А. 1, если есть, 0, если нет. \n");
+            if(temp_sugar == 0){
+                printf("Некорректное значение. Попробуйте ввести продукт заново. \n");
+                continue;
+            }
+            printf("Введите параметр продукта: Витамин А. 1, если есть, 0 или пустая строка если нет. \n");
             temp_vit_A = input_int();
-            printf("Введите параметр продукта: Витамин D. 1, если есть, 0, если нет. \n");
+            printf("Введите параметр продукта: Витамин D. 1, если есть, 0 или пустая строка если нет. \n");
             temp_vit_D = input_int();
-            printf("Введите параметр продукта: Витамин E. 1, если есть, 0, если нет. \n");
+            printf("Введите параметр продукта: Витамин E. 1, если есть, 0 или пустая строка если нет. \n");
             temp_vit_E = input_int();
-            printf("Введите параметр продукта: Витамин K. 1, если есть, 0, если нет. \n");
+            printf("Введите параметр продукта: Витамин K. 1, если есть. \n");
             temp_vit_K = input_int();
         }
         dish avail = {temp_name, temp_e_value, temp_cal, temp_proteins,temp_fats, temp_carbohydrates, temp_sugar,temp_vit_A,temp_vit_D,temp_vit_E,temp_vit_K};
@@ -74,8 +98,13 @@ int main(){
     printf("Введите параметр продукта: Витамин K. 1, если есть, 0, если нет. \n");
     temp_vit_K = input_int();
     dish target = {"target", temp_e_value, temp_cal, temp_proteins,temp_fats, temp_carbohydrates, temp_sugar,temp_vit_A,temp_vit_D,temp_vit_E,temp_vit_K};
-    char *result = find(target, fridge);
-    printf("%s", result);
-    del(fridge);
+    if(fridge != NULL) {
+        char *result = find(target, fridge);
+        printf("%s", result);
+        del(fridge);
+    }
+    else{
+        printf("У вас в холодильнике нет продуктов! Вам нечего есть! \n");
+    }
     return 0;
 }
