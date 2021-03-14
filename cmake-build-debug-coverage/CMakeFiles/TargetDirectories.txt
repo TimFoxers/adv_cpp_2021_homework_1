@@ -1,0 +1,5 @@
+/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
+/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/advcpp2021homework1.dir
+/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/test.dir
+/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/tests.dir
+/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir

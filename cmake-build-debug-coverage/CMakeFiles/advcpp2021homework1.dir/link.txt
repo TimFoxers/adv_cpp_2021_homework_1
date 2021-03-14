@@ -1,0 +1,1 @@
+/usr/bin/gcc --coverage -g   CMakeFiles/advcpp2021homework1.dir/src/main.c.o CMakeFiles/advcpp2021homework1.dir/src/deviation.c.o CMakeFiles/advcpp2021homework1.dir/src/input.c.o CMakeFiles/advcpp2021homework1.dir/src/fridge.c.o  -o advcpp2021homework1 

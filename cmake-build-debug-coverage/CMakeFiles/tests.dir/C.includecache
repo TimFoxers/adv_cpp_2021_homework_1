@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/foxers/CLionProjects/advcpp2021homework1/include/deviation.h
+stdio.h
+-
+stdlib.h
+-
+../include/dish.h
+/home/foxers/CLionProjects/advcpp2021homework1/include/dish.h
+../include/fridge.h
+/home/foxers/CLionProjects/advcpp2021homework1/include/fridge.h
+
+/home/foxers/CLionProjects/advcpp2021homework1/include/dish.h
+
+/home/foxers/CLionProjects/advcpp2021homework1/include/fridge.h
+stdio.h
+-
+stdlib.h
+-
+stdbool.h
+-
+string.h
+-
+dish.h
+/home/foxers/CLionProjects/advcpp2021homework1/include/dish.h
+
+/home/foxers/CLionProjects/advcpp2021homework1/src/deviation.c
+../include/deviation.h
+/home/foxers/CLionProjects/advcpp2021homework1/include/deviation.h
+

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="advcpp2021homework1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="advcpp2021homework1">
+				<Option output="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/advcpp2021homework1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 advcpp2021homework1"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="advcpp2021homework1/fast">
+				<Option output="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/advcpp2021homework1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 advcpp2021homework1/fast"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests">
+				<Option output="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/foxers/CLionProjects/advcpp2021homework1/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 tests"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tests/fast">
+				<Option output="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/foxers/CLionProjects/advcpp2021homework1/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 tests/fast"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="make -j4 -f &quot;/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/include/deviation.h">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/include/dish.h">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/include/fridge.h">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/include/input.h">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/src/deviation.c">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/src/fridge.c">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/src/input.c">
+			<Option target="advcpp2021homework1"/>
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/src/main.c">
+			<Option target="advcpp2021homework1"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/tests/tests.cpp">
+			<Option target="tests"/>
+		</Unit>
+		<Unit filename="/home/foxers/CLionProjects/advcpp2021homework1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

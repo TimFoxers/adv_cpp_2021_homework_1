@@ -1,0 +1,1 @@
+/usr/bin/g++  -Wall -Wno-unknown-pragmas -Wno-sign-compare -Woverloaded-virtual -Wwrite-strings -Wno-unused -Werror -Wpedantic -fprofile-arcs -ftest-coverage -O0 -g   CMakeFiles/tests.dir/tests/tests.cpp.o CMakeFiles/tests.dir/src/deviation.c.o CMakeFiles/tests.dir/src/input.c.o CMakeFiles/tests.dir/src/fridge.c.o  -o tests  /usr/lib/x86_64-linux-gnu/libgtest.a -lpthread 

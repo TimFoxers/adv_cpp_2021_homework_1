@@ -1,0 +1,220 @@
+        -:    0:Source:/home/foxers/CLionProjects/advcpp2021homework1/tests/tests.cpp
+        -:    0:Graph:/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/tests.dir/tests/tests.cpp.gcno
+        -:    0:Data:/home/foxers/CLionProjects/advcpp2021homework1/cmake-build-debug-coverage/CMakeFiles/tests.dir/tests/tests.cpp.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include <gtest/gtest.h>
+        -:    2:#include <iostream>
+        -:    3:
+        -:    4:extern "C" {
+        -:    5:#include "dish.h"
+        -:    6:#include "deviation.h"
+        -:    7:}
+        -:    8:
+        -:    9:char apps[] = "app";
+        -:   10:char dess[] = "des";
+        -:   11:char ents[] = "ent";
+        -:   12:char rights[] = "right";
+        -:   13:
+        -:   14:const dish app = {apps, 23, 23, 6,12, 224, 12,1,1,1,0};
+        -:   15:const dish des = {dess, 21, 23, 6,12, 234, 12,1,1,1,1};
+        -:   16:const dish des2 = {ents, 23, 23, 6,12, 234, 12,1,1,1,1};
+        -:   17:const dish des3 = {rights, 22, 23, 6,12, 224, 12,1,1,1,0};
+        -:   18:
+        2:   19:TEST(deviation, values_1) {
+       1*:   20:    EXPECT_EQ(deviation(app, des), 22);
+        1:   21:}
+------------------
+_ZN23deviation_values_1_Test8TestBodyEv:
+        1:   19:TEST(deviation, values_1) {
+       1*:   20:    EXPECT_EQ(deviation(app, des), 22);
+        1:   20-block  0
+        1:   20-block  1
+        1:   20-block  2
+    %%%%%:   20-block  3
+    %%%%%:   20-block  4
+    %%%%%:   20-block  5
+    %%%%%:   20-block  6
+    %%%%%:   20-block  7
+        1:   20-block  8
+    $$$$$:   20-block  9
+    $$$$$:   20-block 10
+    $$$$$:   20-block 11
+    $$$$$:   20-block 12
+    $$$$$:   20-block 13
+    $$$$$:   20-block 14
+    $$$$$:   20-block 15
+        1:   21:}
+------------------
+_ZN23deviation_values_1_TestC2Ev:
+        1:   19:TEST(deviation, values_1) {
+        1:   19-block  0
+------------------
+        -:   22:
+        2:   23:TEST(fridge, initialization) {
+        1:   24:    dish_list* fridge = NULL;
+        1:   25:    push(&fridge, des);
+        1:   26:    push(&fridge, des2);
+        1:   27:    push(&fridge, des3);
+       1*:   28:    EXPECT_EQ(fridge->current.e_value, 22);
+        1:   29:    del(fridge);
+        1:   30:}
+------------------
+_ZN26fridge_initialization_Test8TestBodyEv:
+        1:   23:TEST(fridge, initialization) {
+        1:   24:    dish_list* fridge = NULL;
+        1:   25:    push(&fridge, des);
+        1:   25-block  0
+        1:   26:    push(&fridge, des2);
+        1:   26-block  0
+        1:   27:    push(&fridge, des3);
+        1:   27-block  0
+       1*:   28:    EXPECT_EQ(fridge->current.e_value, 22);
+        1:   28-block  0
+        1:   28-block  1
+    %%%%%:   28-block  2
+    %%%%%:   28-block  3
+    %%%%%:   28-block  4
+    %%%%%:   28-block  5
+    %%%%%:   28-block  6
+        1:   28-block  7
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+        1:   29:    del(fridge);
+        1:   30:}
+        1:   30-block  0
+------------------
+_ZN26fridge_initialization_TestC2Ev:
+        1:   23:TEST(fridge, initialization) {
+        1:   23-block  0
+------------------
+        -:   31:
+        2:   32:TEST(fridge, initialization_2) {
+        1:   33:    dish_list* fridge = NULL;
+        1:   34:    push(&fridge, des);
+        1:   35:    push(&fridge, des2);
+        1:   36:    push(&fridge, des3);
+       1*:   37:    EXPECT_EQ(fridge->next->current.e_value, 23);
+        1:   38:    del(fridge);
+        1:   39:}
+------------------
+_ZN28fridge_initialization_2_Test8TestBodyEv:
+        1:   32:TEST(fridge, initialization_2) {
+        1:   33:    dish_list* fridge = NULL;
+        1:   34:    push(&fridge, des);
+        1:   34-block  0
+        1:   35:    push(&fridge, des2);
+        1:   35-block  0
+        1:   36:    push(&fridge, des3);
+        1:   36-block  0
+       1*:   37:    EXPECT_EQ(fridge->next->current.e_value, 23);
+        1:   37-block  0
+        1:   37-block  1
+    %%%%%:   37-block  2
+    %%%%%:   37-block  3
+    %%%%%:   37-block  4
+    %%%%%:   37-block  5
+    %%%%%:   37-block  6
+        1:   37-block  7
+    $$$$$:   37-block  8
+    $$$$$:   37-block  9
+    $$$$$:   37-block 10
+    $$$$$:   37-block 11
+    $$$$$:   37-block 12
+    $$$$$:   37-block 13
+        1:   38:    del(fridge);
+        1:   39:}
+        1:   39-block  0
+------------------
+_ZN28fridge_initialization_2_TestC2Ev:
+        1:   32:TEST(fridge, initialization_2) {
+        1:   32-block  0
+------------------
+        -:   40:
+        2:   41:TEST(find, values_1) {
+        1:   42:    dish_list* fridge = NULL;
+        1:   43:    push(&fridge, des);
+        1:   44:    push(&fridge, des2);
+        1:   45:    push(&fridge, des3);
+        1:   46:    char *result = find(app, fridge);
+       1*:   47:    EXPECT_EQ(result, rights);
+        1:   48:}
+------------------
+_ZN18find_values_1_Test8TestBodyEv:
+        1:   41:TEST(find, values_1) {
+        1:   42:    dish_list* fridge = NULL;
+        1:   43:    push(&fridge, des);
+        1:   43-block  0
+        1:   44:    push(&fridge, des2);
+        1:   44-block  0
+        1:   45:    push(&fridge, des3);
+        1:   45-block  0
+        1:   46:    char *result = find(app, fridge);
+        1:   46-block  0
+       1*:   47:    EXPECT_EQ(result, rights);
+        1:   47-block  0
+        1:   47-block  1
+    %%%%%:   47-block  2
+    %%%%%:   47-block  3
+    %%%%%:   47-block  4
+    %%%%%:   47-block  5
+    %%%%%:   47-block  6
+        1:   47-block  7
+    $$$$$:   47-block  8
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+        1:   48:}
+------------------
+_ZN18find_values_1_TestC2Ev:
+        1:   41:TEST(find, values_1) {
+        1:   41-block  0
+------------------
+        -:   49:
+        2:   50:TEST(find, values_2) {
+        1:   51:    dish_list* fridge = NULL;
+        1:   52:    push(&fridge, des);
+        1:   53:    char *result = find(app, fridge);
+       1*:   54:    EXPECT_EQ(result, dess);
+        1:   55:}
+------------------
+_ZN18find_values_2_Test8TestBodyEv:
+        1:   50:TEST(find, values_2) {
+        1:   51:    dish_list* fridge = NULL;
+        1:   52:    push(&fridge, des);
+        1:   52-block  0
+        1:   53:    char *result = find(app, fridge);
+        1:   53-block  0
+       1*:   54:    EXPECT_EQ(result, dess);
+        1:   54-block  0
+        1:   54-block  1
+    %%%%%:   54-block  2
+    %%%%%:   54-block  3
+    %%%%%:   54-block  4
+    %%%%%:   54-block  5
+    %%%%%:   54-block  6
+        1:   54-block  7
+    $$$$$:   54-block  8
+    $$$$$:   54-block  9
+    $$$$$:   54-block 10
+    $$$$$:   54-block 11
+    $$$$$:   54-block 12
+        1:   55:}
+------------------
+_ZN18find_values_2_TestC2Ev:
+        1:   50:TEST(find, values_2) {
+        1:   50-block  0
+------------------
+        -:   56:
+        -:   57:
+        1:   58:int main(int argc, char *argv[]) {
+        1:   59:    ::testing::InitGoogleTest(&argc, argv);
+        1:   59-block  0
+        1:   60:    return RUN_ALL_TESTS();
+        -:   61:}
+        -:   62:
