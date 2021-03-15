@@ -15,4 +15,5 @@ target_include_directories(tests PUBLIC ${GTEST_INCLUDE_DIRS})
 target_link_libraries(tests ${GTEST_LIBRARIES} pthread)
 target_include_directories(tests PUBLIC include)
 enable_testing()
+
 add_test(gtests ./tests)
