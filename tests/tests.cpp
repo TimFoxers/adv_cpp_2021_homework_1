@@ -46,6 +46,7 @@ TEST(find, values_1) {
     push(&fridge, des3);
     char *result = find(app, fridge);
     EXPECT_EQ(result, rights);
+    del(fridge);
 }
 
 TEST(find, values_2) {
@@ -53,6 +54,7 @@ TEST(find, values_2) {
     push(&fridge, des);
     char *result = find(app, fridge);
     EXPECT_EQ(result, dess);
+    del(fridge);
 }
 
 TEST(deviation, values_3) {
@@ -66,6 +68,7 @@ TEST(find, values_3) {
     push(&fridge, des2);
     char *result = find(app, fridge);
     EXPECT_EQ(result, rights);
+    del(fridge);
 }
 
 int main(int argc, char *argv[]) {
