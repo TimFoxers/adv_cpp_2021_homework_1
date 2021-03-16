@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ dev, main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: installing c++/c compiler
+        run: sudo apt install build-essential
+
+      - name: installing git
+        run: sudo apt install git
+
+      - name: installing lcov
+        run: sudo apt install lcov
+
+      - name: installing valgrind
+        run: sudo apt install valgrind
+
+      - name: build
+        run: mkdir build && cd build && cmake .. && make
+
+      - name: tests
+        run: ./build/tests
