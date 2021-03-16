@@ -31,3 +31,12 @@ jobs:
 
       - name: tests
         run: ./build/tests
+
+      - name: get code coverage
+        run: cd build/CMakeFiles/tests.dir/src && gcov *.gcno && lcov --capture --directory . --output-file test.info && mkdir coverage && genhtml test.info --output-directory coverage
+
+      - name: coverage
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: build/CMakeFiles/tests.dir/src/coverage
