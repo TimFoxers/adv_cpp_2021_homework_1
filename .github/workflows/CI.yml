@@ -14,16 +14,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: installing c++/c compiler
+      - name: install compilers
         run: sudo apt install build-essential
 
-      - name: installing git
+      - name: install git
         run: sudo apt install git
 
-      - name: installing lcov
+      - name: install lcov
         run: sudo apt install lcov
 
-      - name: installing valgrind
+      - name: install valgrind
         run: sudo apt install valgrind
 
       - name: build
@@ -35,7 +35,7 @@ jobs:
       - name: get code coverage
         run: cd build/CMakeFiles/tests.dir/src && gcov *.gcno && lcov --capture --directory . --output-file test.info && mkdir coverage && genhtml test.info --output-directory coverage
 
-      - name: coverage
+      - name: coverage artifact
         uses: actions/upload-artifact@v2
         with:
           name: coverage
