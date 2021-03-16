@@ -14,21 +14,18 @@ addons:
     update: true
     packages:
       - cmake
-      - cppcheck
       - valgrind
       - libgtest-dev
+      - g++
+      - lcov
 
-install:
-  - cd /usr/src/gtest
-  - sudo cmake CMakeLists.txt
-  - sudo make
-  - sudo cp *.a /usr/lib
-  - cd /home/travis/build/TimFoxers/adv_cpp_2021_homework_1
+#install:
+#  - cd /usr/src/gtest
+#  - sudo cmake CMakeLists.txt
+#  - sudo make
+#  - sudo cp *.a /usr/lib
+#  - cd /home/travis/build/TimFoxers/adv_cpp_2021_homework_1
 
 script:
-  - mkdir build && cd build
-  - cmake ..
-  - cmake --build .
-  - ctest .
-  - valgrind --tool=memcheck --leak-check=full ./tests
-  - cppcheck -q --enable=all ../src ../include ../tests
+  - mkdir build && cd build && cmake .. && make
+  - ls -l

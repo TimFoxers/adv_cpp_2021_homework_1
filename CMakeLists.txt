@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.17)
+cmake_minimum_required(VERSION 3.13)
 project(advcpp2021homework1)
 
 set(CMAKE_CXX_STANDARD 20)
@@ -6,6 +6,7 @@ set(CMAKE_CXX_FLAGS         "-Wall -Wno-unknown-pragmas -Wno-sign-compare -Wover
 set(CMAKE_CXX_FLAGS_DEBUG   "-O0 -g")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fprofile-arcs -ftest-coverage")
 set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_FLAGS "--coverage")
 
 add_executable(advcpp2021homework1 src/main.c include/dish.h src/deviation.c include/deviation.h include/input.h src/input.c src/fridge.c include/fridge.h)
 
