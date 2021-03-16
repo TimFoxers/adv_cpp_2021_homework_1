@@ -13,7 +13,7 @@ addons:
   apt:
     update: true
     packages:
-      - cmake
+      - cmake-3.13
       - valgrind
       - libgtest-dev
       - g++
