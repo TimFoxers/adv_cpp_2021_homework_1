@@ -23,7 +23,7 @@ install:
   - sudo cmake CMakeLists.txt
   - sudo make
   - sudo cp *.a /usr/lib
-  - cd /home/travis/build/TimFoxers/advcpphomework1
+  - cd /home/travis/build/TimFoxers/advcpp2021homework1
 
 script:
   - mkdir build && cd build
