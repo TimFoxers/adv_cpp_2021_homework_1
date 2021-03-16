@@ -40,3 +40,6 @@ jobs:
         with:
           name: coverage
           path: build/CMakeFiles/tests.dir/src/coverage
+
+      - name: valgrind
+        run: valgrind --tool=memcheck --leak-check=full --show-leak-kinds=all --undef-value-errors=no --verbose ./build/tests
