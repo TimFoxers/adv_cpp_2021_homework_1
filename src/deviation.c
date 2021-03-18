@@ -48,7 +48,7 @@ int deviation(dish applicant, dish desire){ //функция вычислени�
 }
 
 char *find(dish target, dish_list *fridge){
-    int min = deviation(target, fridge->current);
+    int min = deviation(fridge->current, target);
     char* min_name = fridge->current.name;
     dish_list *node = fridge->next;
 
